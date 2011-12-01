@@ -1,0 +1,25 @@
+ahci_load="yes"
+sem_load="yes"
+vesa_load="yes"
+sound_load="yes"
+snd_ich_load="yes"
+autoboot_delay="5"
+loader_logo="beastie"
+vm.pmap.pg_ps_enabled = 1
+vfs.usermount=1
+vesa_load="yes"
+
+#bitmap_load="yes"
+#splash_bmp_load="yes"
+#splash_pcx_load="yes"
+#cpufreq_load="yes"
+#linprocfs_load="yes"
+#linsysfs_load="yes"
+#linux_load="yes"
+#procfs_load="yes"
+#snd_hda_load="yes"
+#snd_sb16_load="yes"
+#snd_sb8_load="yes"
+#kern.hz=100
+
+

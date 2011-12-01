@@ -1,0 +1,6 @@
+
+[devfsrules_world_writable=10]
+add path 'fuse*' mode  666
+#[system=10]
+#add path 'usb/*' mode 0660 group operator
+

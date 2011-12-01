@@ -1,0 +1,10 @@
+
+AUTO_UPGRADE=yes
+AUTO_INSTALL=yes
+IGNORE_FILES='/etc/motd'
+PRESERVE_FILES=yes
+VERBOSE=yes
+#DIFF_OPTIONS='-I$FreeBSD:.*[$]'
+FREEBSD_ID=yes
+
+

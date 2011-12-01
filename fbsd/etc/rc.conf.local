@@ -1,0 +1,63 @@
+
+# -- sysinstall generated deltas -- # Sat Feb 12 12:29:27 2011
+# Created: Sat Feb 12 12:29:27 2011
+# Enable network daemons for user convenience.
+# Please make all changes to this file, not to /etc/defaults/rc.conf.
+# This file now contains just the overrides from /etc/defaults/rc.conf.
+inetd_enable="YES"
+keymap="us.dvorak"
+sshd_enable="YES"
+default_router="192.168.1.1"
+ifconfig_msk0="192.168.1.23"
+hostname="dixneuf.local"
+ifconfig_em0="DHCP"
+font8x16="cp865-thin-8x16"
+dbus_enable="yes"
+hald_enable="yes"
+usbd_enable="yes"
+linux_enable="yes"
+mixer_enable="yes"
+#slim_enable="yes"
+keyrate="fast"
+###
+## Virtualbox additions
+## to use additionall features of VBox
+## $ pw groupmod wheel -m USER
+vboxguest_enable="yes"
+vboxservice_enable="yes"
+
+sendmail_enable="NO"
+sendmail_submit_enable="NO"
+sendmail_outbound_enable="NO"
+sendmail_msp_queue_enable="NO"
+
+fusefs_enable="yes"
+devfs_system_ruleset="devfsrules_world_writable"
+#devfs_system_ruleset="system"
+icecast_enable="yes"
+
+lighttpd_enable="yes"
+lighttpd_conf="/home/mytoh/.lighty/etc/lighttpd.conf"
+lighttpd_pidfile="/home/mytoh/.lighty/run/lighttpd.pid"
+
+swapd_enable="yes"
+
+# ntp
+ntpd_enable="yes"
+ntpd_config="/etc/ntp.conf"
+ntpd_sync_on_start="yes"
+ntpd_flags="-p /var/run/ntpd.pid -f /etc/ntpd.drift"
+ntpdate_enable="yes"
+ntpdate_program="ntpdate"
+ntpdate_flags="-sbv ntp.nict.jp"
+xntpd_enable="yes"
+allscreens_flags="MODE_280"
+
+# nfs
+mountd_enable="yes"
+nfs_server_enable="yes"
+nfs_reserved_port_only="yes"
+rpc_lockd_enable="yes"
+rpc_statd_enable="yes"
+rpcbind_enable="yes"
+nfs_client_enable="yes"

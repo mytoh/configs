@@ -1,0 +1,12 @@
+--- asf_streaming.c.orig	2011-09-06 04:29:53.000000000 +0900
++++ asf_streaming.c	2011-09-06 04:18:38.000000000 +0900
+@@ -488,8 +488,7 @@
+ 	if( 	!strcasecmp(content_type, "application/octet-stream") ||
+ 		!strcasecmp(content_type, "application/vnd.ms.wms-hdr.asfv1") ||        // New in Corona, first request
+ 		!strcasecmp(content_type, "application/x-mms-framed") ||                // New in Corana, second request
+-		!strcasecmp(content_type, "video/x-ms-wmv") ||
+-		!strcasecmp(content_type, "video/x-ms-asf")) {
++		!strcasecmp(content_type, "video/x-ms-wmv" )) {
+ 
+ 		if( strstr(features, "broadcast") ) {
+ 			mp_msg(MSGT_NETWORK,MSGL_V,"=====> ASF Live stream\n");
