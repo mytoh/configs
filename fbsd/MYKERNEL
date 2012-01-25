@@ -40,6 +40,8 @@ options 	PRINTF_BUFR_SIZE=128	# Prevent printf output being interspersed.
 options 	KBD_INSTALL_CDEV	# install a CDEV entry in /dev
 options 	HWPMC_HOOKS		# Necessary kernel hooks for hwpmc(4)
 options 	AUDIT			# Security event auditing
+options 	CAPABILITY_MODE		# Capsicum capability mode
+options 	CAPABILITIES		# Capsicum capabilities
 options 	MAC			# TrustedBSD MAC Framework
 #options 	KDTRACE_HOOKS		# Kernel DTrace hooks
 options 	INCLUDE_CONFIG_FILE     # Include this file in kernel
@@ -63,6 +65,33 @@ options 	ATA_CAM		# Handle legacy controllers with CAM
 options 	ATA_STATIC_ID	# Static device numbering
 device		mvs		# Marvell 88SX50XX/88SX60XX/88SX70XX/SoC SATA
 device		siis		# SiliconImage SiI3124/SiI3132/SiI3531 SATA
+
+# SCSI Controllers
+device		ahb		# EISA AHA1742 family
+device		ahc		# AHA2940 and onboard AIC7xxx devices
+options 	AHC_REG_PRETTY_PRINT	# Print register bitfields in debug
+					# output.  Adds ~128k to driver.
+device		ahd		# AHA39320/29320 and onboard AIC79xx devices
+options 	AHD_REG_PRETTY_PRINT	# Print register bitfields in debug
+					# output.  Adds ~215k to driver.
+device		esp		# AMD Am53C974 (Tekram DC-390(T))
+device		hptiop		# Highpoint RocketRaid 3xxx series
+device		isp		# Qlogic family
+#device		ispfw		# Firmware for QLogic HBAs- normally a module
+device		mpt		# LSI-Logic MPT-Fusion
+#device		ncr		# NCR/Symbios Logic
+device		sym		# NCR/Symbios Logic (newer chipsets + those of `ncr')
+device		trm		# Tekram DC395U/UW/F DC315U adapters
+
+device		adv		# Advansys SCSI adapters
+device		adw		# Advansys wide SCSI adapters
+device		aha		# Adaptec 154x SCSI adapters
+device		aic		# Adaptec 15[012]x SCSI adapters, AIC-6[23]60.
+device		bt		# Buslogic/Mylex MultiMaster SCSI adapters
+
+device		ncv		# NCR 53C500
+device		nsp		# Workbit Ninja SCSI-3
+device		stg		# TMC 18C30/18C50
 
 
 # ATA/SCSI peripherals
@@ -165,3 +194,7 @@ device		snd_ich		# Intel, NVidia and other ICH AC'97 Audio
 device		snd_uaudio	# USB Audio
 device		snd_via8233	# VIA VT8233x Audio
 
+# MMC/SD
+device		mmc		# MMC/SD bus
+device		mmcsd		# MMC/SD memory card
+device		sdhci		# Generic PCI SD Host Controller

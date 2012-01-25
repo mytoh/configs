@@ -1,6 +1,6 @@
 #!/bin/csh -f
 
-#csup /etc/supfile
+csup /home/mytoh/local/git/configs/fbsd/current-supfile
 cd /usr/src
 if ( -e /usr/obj ) then
   make cleandir
@@ -10,5 +10,5 @@ endif
 
 cd /usr/src
 
-make -j4 buildworld | tee /buildworld.log && make -j4 buildkernel | tee /buildkernel.log && make installkernel
+make -j2 buildworld | tee /buildworld.log && make -j2 buildkernel | tee /buildkernel.log && make installkernel
 
