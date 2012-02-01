@@ -1,11 +1,11 @@
 #!/bin/csh -f
 
-csup /home/mytoh/local/git/configs/fbsd/current-supfile
+#csup /home/mytoh/local/git/configs/fbsd/current-supfile
 cd /usr/src
 if ( -e /usr/obj ) then
   make cleandir
   make cleandir
-  rm -rfv /usr/obj
+#  rm -rfv /usr/obj
 endif
 
 cd /usr/src

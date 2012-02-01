@@ -1,5 +1,5 @@
 *default tag=.
-*default host=cvsup5.jp.FreeBSD.org
+*default host=cvsup.jp.FreeBSD.org
 *default prefix=/usr
 *default base=/var/db
 *default release=cvs delete  compress

@@ -5,7 +5,7 @@
 # Please make all changes to this file, not to /etc/defaults/rc.conf.
 # This file now contains just the overrides from /etc/defaults/rc.conf.
 inetd_enable="YES"
-keymap="us.dvorak"
+keymap="us.dvorakx"
 sshd_enable="YES"
 default_router="192.168.1.1"
 ifconfig_msk0="192.168.1.23"
@@ -19,12 +19,6 @@ linux_enable="yes"
 mixer_enable="yes"
 #slim_enable="yes"
 keyrate="fast"
-###
-## Virtualbox additions
-## to use additionall features of VBox
-## $ pw groupmod wheel -m USER
-vboxguest_enable="yes"
-vboxservice_enable="yes"
 
 sendmail_enable="NO"
 sendmail_submit_enable="NO"
@@ -54,10 +48,6 @@ xntpd_enable="yes"
 allscreens_flags="MODE_280"
 
 # nfs
-mountd_enable="yes"
-nfs_server_enable="yes"
-nfs_reserved_port_only="yes"
-rpc_lockd_enable="yes"
-rpc_statd_enable="yes"
-rpcbind_enable="yes"
-nfs_client_enable="yes"
+# client
+nfsuserd_enable="yes"
+nfscbd_enable="yes"

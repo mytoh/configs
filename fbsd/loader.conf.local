@@ -3,11 +3,11 @@ sem_load="yes"
 vesa_load="yes"
 sound_load="yes"
 snd_ich_load="yes"
+snd_uaudio_load="yes"
 autoboot_delay="5"
 loader_logo="beastie"
 vm.pmap.pg_ps_enabled = 1
 vfs.usermount=1
-vesa_load="yes"
 
 #bitmap_load="yes"
 #splash_bmp_load="yes"
