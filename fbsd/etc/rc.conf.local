@@ -51,3 +51,6 @@ allscreens_flags="MODE_280"
 # client
 nfsuserd_enable="yes"
 nfscbd_enable="yes"
+#server
+nfs_server_enable="yes"
+nfsv4_server_enable="yes"
