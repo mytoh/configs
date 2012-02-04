@@ -8,7 +8,7 @@ svn up
 if ( -e $srcdir/obj ) then
   make cleandir
   make cleandir
-#  rm -rfv /usr/obj
+  rm -rfv /usr/obj
 endif
 
 cd $srcdir

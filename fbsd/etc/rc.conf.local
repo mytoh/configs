@@ -5,20 +5,30 @@
 # Please make all changes to this file, not to /etc/defaults/rc.conf.
 # This file now contains just the overrides from /etc/defaults/rc.conf.
 inetd_enable="YES"
-keymap="us.dvorakx"
 sshd_enable="YES"
-hostname="dixneuf"
+
+keymap="us.dvorakx"
+keyrate="fast"
+
+hostname="dixneuf.local"
+# static_routes="0"
+# route_0="default 192.168.1.1"
 defaultrouter="192.168.1.1"
-ifconfig_em0="inet 192.168.1.10 netmask 0xffffff00"
-#ifconfig_em0="dhcp"
+# ifconfig_em0="inet 192.168.1.10 netmask 255.255.255.0"
+# ifconfig_em0="inet 192.168.1.10 netmask 255.255.255.0"
+ifconfig_em0="DHCP"
+# ifconfig_em0_ipv6="2408:85:86f8"
+
 font8x16="cp865-thin-8x16"
 dbus_enable="yes"
 hald_enable="yes"
 usbd_enable="yes"
 linux_enable="yes"
 mixer_enable="yes"
+powerd_enable="yes"
+performance_cpu_freq="NONE"	# Online CPU frequency
+economy_cpu_freq="NONE"		# Offline CPU frequency
 #slim_enable="yes"
-keyrate="fast"
 
 sendmail_enable="NO"
 sendmail_submit_enable="NO"
@@ -45,7 +55,7 @@ ntpdate_enable="yes"
 ntpdate_program="ntpdate"
 ntpdate_flags="-sbv ntp.nict.jp"
 xntpd_enable="yes"
-allscreens_flags="MODE_280"
+allscreens_flags="MODE_283"
 
 # nfsv4
 # client
