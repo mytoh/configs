@@ -13,7 +13,6 @@ linprocfs_load="yes"
 linsysfs_load="yes"
 linux_load="yes"
 usb_load="yes"
-snd_uaudio_load="NO"    # USB audio
 
 #bitmap_load="yes"
 #splash_bmp_load="yes"
