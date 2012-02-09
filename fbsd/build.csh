@@ -6,9 +6,9 @@ set srcdir = /usr/src
 cd $srcdir
 svn up
 if ( -e $srcdir/obj ) then
-  make cleandir
-  make cleandir
-  rm -rfv /usr/obj
+make cleandir
+make cleandir
+rm -rfv /usr/obj
 endif
 
 cd $srcdir

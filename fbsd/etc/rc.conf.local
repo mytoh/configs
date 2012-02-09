@@ -9,13 +9,13 @@ sshd_enable="YES"
 
 keymap="us.dvorakx"
 keyrate="fast"
+keybell="off"
 
 hostname="dixneuf.local"
 # static_routes="0"
 # route_0="default 192.168.1.1"
 defaultrouter="192.168.1.1"
-# ifconfig_em0="inet 192.168.1.10 netmask 255.255.255.0"
-# ifconfig_em0="inet 192.168.1.10 netmask 255.255.255.0"
+# ifconfig_em0="inet 192.168.1.20 netmask 255.255.255.0"
 ifconfig_em0="DHCP"
 # ifconfig_em0_ipv6="2408:85:86f8"
 

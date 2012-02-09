@@ -1,0 +1,9 @@
+#!/bin/sh
+# $Id: redports-virtualbox.in 1018 2010-11-21 19:16:06Z anon $
+
+. /usr/local/share/portshaker/portshaker.subr
+
+method="svn"
+svn_checkout_path="https://svn.redports.org/tota"
+
+run_portshaker_command $*
