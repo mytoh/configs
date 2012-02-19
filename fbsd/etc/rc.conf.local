@@ -35,8 +35,8 @@ sendmail_submit_enable="NO"
 sendmail_outbound_enable="NO"
 sendmail_msp_queue_enable="NO"
 
-fusefs_enable="yes"
-devfs_system_ruleset="devfsrules_world_writable"
+# fusefs_enable="yes"
+devfs_system_ruleset="system"
 #devfs_system_ruleset="system"
 icecast_enable="yes"
 
@@ -68,14 +68,19 @@ allscreens_flags="MODE_283"
 # nfsv3
 #client
 nfs_client_enable="yes"
-# nfs_client_flags="-n 4"
 #server
 # mountd_enable="yes"
-# rpcbind_enable="yse"
+rpcbind_enable="yes"
 # rpc_lockd_enable="yes"
 # rpc_statd_enable="yes"
 # nfs_server_enable="yes"
-
+# rpc_ypupdated_enable="yes"	# Run if NIS master and SecureRPC (or NO).
 
 # freenet
 freenet6_enable="no"
+
+# ossv4
+oss_enable="yes"
+
+# vbox
+vboxnet_enable="yes"

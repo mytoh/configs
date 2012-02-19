@@ -12,6 +12,8 @@ linprocfs_load="yes"
 linsysfs_load="yes"
 linux_load="yes"
 
+vboxdrv_load="yes"
+
 #bitmap_load="yes"
 #splash_bmp_load="yes"
 #splash_pcx_load="yes"
