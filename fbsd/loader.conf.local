@@ -3,16 +3,24 @@ sem_load="yes"
 vesa_load="yes"
 usb_load="yes"
 snd_uaudio_load="yes"
+fuse_load="yes"
+coretemp_load="yes"
+aio_load="yes"
+libiconv_load="yes"
+libmchain_load="yes"
 autoboot_delay="5"
 loader_logo="beastie"
-vm.pmap.pg_ps_enabled = 1
+vm.pmap.pg_ps_enabled=1
 vfs.usermount=1
 procfs_load="yes"
 linprocfs_load="yes"
 linsysfs_load="yes"
 linux_load="yes"
-
+speaker_load="yes"
 vboxdrv_load="yes"
+kern.ipc.shmseg=1024
+kern.ipc.shmmni=1024
+kern.maxproc=10000
 
 #bitmap_load="yes"
 #splash_bmp_load="yes"

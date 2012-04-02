@@ -12,12 +12,10 @@ keyrate="fast"
 keybell="off"
 
 hostname="dixneuf.local"
-# static_routes="0"
-# route_0="default 192.168.1.1"
 defaultrouter="192.168.1.1"
-# ifconfig_em0="inet 192.168.1.20 netmask 255.255.255.0"
-ifconfig_em0="DHCP"
-# ifconfig_em0_ipv6="2408:85:86f8"
+ifconfig_em0="inet 192.168.1.10 netmask 255.255.255.0"
+# ifconfig_em0="DHCP"
+routed_enable="yes"		# Set to YES to enable a routing daemon.
 
 font8x16="cp865-thin-8x16"
 dbus_enable="yes"
@@ -70,7 +68,7 @@ allscreens_flags="MODE_283"
 nfs_client_enable="yes"
 #server
 # mountd_enable="yes"
-rpcbind_enable="yes"
+# rpcbind_enable="yes"
 # rpc_lockd_enable="yes"
 # rpc_statd_enable="yes"
 # nfs_server_enable="yes"
@@ -84,3 +82,5 @@ oss_enable="yes"
 
 # vbox
 vboxnet_enable="yes"
+
+fusefs_enable="yes"
