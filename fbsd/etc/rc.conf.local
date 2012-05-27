@@ -1,86 +1,42 @@
 
-# -- sysinstall generated deltas -- # Sat Feb 12 12:29:27 2011
-# Created: Sat Feb 12 12:29:27 2011
-# Enable network daemons for user convenience.
-# Please make all changes to this file, not to /etc/defaults/rc.conf.
-# This file now contains just the overrides from /etc/defaults/rc.conf.
-inetd_enable="YES"
-sshd_enable="YES"
+inetd_enable="yes"
+sshd_enable="yes"
 
 keymap="us.dvorakx"
 keyrate="fast"
 keybell="off"
+font8x16="cp865-thin-8x16"
+allscreen_flags="MODE_283"
 
 hostname="dixneuf.local"
 defaultrouter="192.168.1.1"
-ifconfig_em0="inet 192.168.1.10 netmask 255.255.255.0"
-# ifconfig_em0="DHCP"
-routed_enable="yes"		# Set to YES to enable a routing daemon.
+ifconfig_em0="192.168.1.10"
 
-font8x16="cp865-thin-8x16"
 dbus_enable="yes"
 hald_enable="yes"
 usbd_enable="yes"
 linux_enable="yes"
 mixer_enable="yes"
 powerd_enable="yes"
-performance_cpu_freq="NONE"	# Online CPU frequency
-economy_cpu_freq="NONE"		# Offline CPU frequency
-#slim_enable="yes"
 
-sendmail_enable="NO"
-sendmail_submit_enable="NO"
-sendmail_outbound_enable="NO"
-sendmail_msp_queue_enable="NO"
-
-# fusefs_enable="yes"
 devfs_system_ruleset="system"
-#devfs_system_ruleset="system"
-icecast_enable="yes"
 
-lighttpd_enable="yes"
-lighttpd_conf="/home/mytoh/.lighty/etc/lighttpd.conf"
-lighttpd_pidfile="/home/mytoh/.lighty/run/lighttpd.pid"
 
-swapd_enable="yes"
-
-# ntp
+# ntp.conf
 ntpd_enable="yes"
 ntpd_config="/etc/ntp.conf"
-ntpd_sync_on_start="yes"
+ntpd_sync_on_startup="yes"
 ntpd_flags="-p /var/run/ntpd.pid -f /etc/ntpd.drift"
 ntpdate_enable="yes"
-ntpdate_program="ntpdate"
 ntpdate_flags="-sbv ntp.nict.jp"
 xntpd_enable="yes"
-allscreens_flags="MODE_283"
 
-# nfsv4
-# client
-# nfsuserd_enable="yes"
-# nfscbd_enable="yes"
-#server
-# nfs_server_enable="yes"
-# nfsv4_server_enable="yes"
-
-# nfsv3
-#client
 nfs_client_enable="yes"
-#server
-# mountd_enable="yes"
-# rpcbind_enable="yes"
-# rpc_lockd_enable="yes"
-# rpc_statd_enable="yes"
-# nfs_server_enable="yes"
-# rpc_ypupdated_enable="yes"	# Run if NIS master and SecureRPC (or NO).
+nfsuserd_enable="yse"
+nfscbd_enable="yes"
+nfs_server_enable="yes"
+nfsv4_server_enable="yes"
 
-# freenet
-freenet6_enable="no"
-
-# ossv4
 oss_enable="yes"
-
-# vbox
-vboxnet_enable="yes"
-
-fusefs_enable="yes"
+icecast_enable="yes"
+squid_enable="yes"

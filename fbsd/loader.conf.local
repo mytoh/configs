@@ -16,11 +16,15 @@ procfs_load="yes"
 linprocfs_load="yes"
 linsysfs_load="yes"
 linux_load="yes"
+lindev_load="yes"		# Linux-specific pseudo devices (see lindev(4))
 speaker_load="yes"
 vboxdrv_load="yes"
-kern.ipc.shmseg=1024
-kern.ipc.shmmni=1024
-kern.maxproc=10000
+pty_load="yes"
+
+# kern.ipc.shmseg="1024"
+# kern.ipc.shmmni="1024"
+# kern.maxproc="10000"
+# kern.maxfiles="25000"
 
 #bitmap_load="yes"
 #splash_bmp_load="yes"
