@@ -2,6 +2,10 @@
 inetd_enable="yes"
 sshd_enable="yes"
 
+
+clear_tmp_enable="yes"	# Clear /tmp at startup.
+clear_tmp_X="yes" 	# Clear and recreate X11-related directories in /tmp
+
 keymap="us.dvorakx"
 keyrate="fast"
 keybell="off"
@@ -37,6 +41,6 @@ nfscbd_enable="yes"
 nfs_server_enable="yes"
 nfsv4_server_enable="yes"
 
-oss_enable="yes"
-icecast_enable="yes"
+#oss_enable="yes"
+#icecast_enable="yes"
 squid_enable="yes"
