@@ -14,7 +14,7 @@ allscreen_flags="MODE_283"
 
 hostname="dixneuf.local"
 defaultrouter="192.168.1.1"
-ifconfig_em0="192.168.1.10"
+ifconfig_em0="inet 192.168.1.10 netmask 255.255.255.0"
 
 dbus_enable="yes"
 hald_enable="yes"
@@ -22,6 +22,7 @@ usbd_enable="yes"
 linux_enable="yes"
 mixer_enable="yes"
 powerd_enable="yes"
+moused_enable="no"
 
 devfs_system_ruleset="system"
 
@@ -36,11 +37,17 @@ ntpdate_flags="-sbv ntp.nict.jp"
 xntpd_enable="yes"
 
 nfs_client_enable="yes"
-nfsuserd_enable="yse"
+nfsuserd_enable="yes"
 nfscbd_enable="yes"
 nfs_server_enable="yes"
 nfsv4_server_enable="yes"
 
 #oss_enable="yes"
 #icecast_enable="yes"
-squid_enable="yes"
+#squid_enable="yes"
+
+
+# tor
+privoxy_enable="yes"
+polipo_enable="yes"
+tor_enable="yes"

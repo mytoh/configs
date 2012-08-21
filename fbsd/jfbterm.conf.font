@@ -1,0 +1,97 @@
+
+# font
+#fontset: iso646-1973irv,pcf,L,/usr/local/lib/X11/fonts/misc/mplus_f10r.pcf.gz
+#+fontset: ansix3.4-1968,alias,L,iso646-1973irv
+#fontset: ansix3.4-1968,pcf,L,/usr/local/lib/X11/fonts/artwiz-fonts/glisp.pcf.gz
+#+fontset: iso646-1973irv,pcf,L,/usr/local/lib/X11/fonts/artwiz-fonts/glisp.pcf.gz
+fontset: ansix3.4-1968,pcf,L,/usr/home/mytoh/.fonts/limemod-10.pcf.gz
++fontset: iso646-1973irv,pcf,L,/usr/home/mytoh/.fonts/limemod-10.pcf.gz
++fontset: jisc6226-1978,pcf,L,/usr/local/lib/X11/fonts/misc/mplus_j10r.pcf.gz
++fontset: jisx0208-1983,alias,L,jisc6226-1978
++fontset: jisc6220-1969roman,pcf,L,/usr/local/lib/X11/fonts/misc/mplus_f10r-jisx0201.pcf.gz
++fontset: jisc6220-1969kana,alias,R,jisc6220-1969roman
++fontset: iso8859.1-1987,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-1.pcf.gz
++fontset: iso8859.2-1987,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-2.pcf.gz
++fontset: iso8859.3-1988,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-3.pcf.gz
++fontset: iso8859.4-1988,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-4.pcf.gz
++fontset: iso8859.5-1988,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-5.pcf.gz
++fontset: iso8859.7-1987,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-7.pcf.gz
++fontset: iso8859.8-1988,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-8.pcf.gz
++fontset: iso8859.9-1989,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-9.pcf.gz
++fontset: iso8859.10-1992,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-10.pcf.gz
++fontset: iso8859.13-1998,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-13.pcf.gz
++fontset: iso8859.14-1998,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-14.pcf.gz
++fontset: iso8859.15-1999,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-15.pcf.gz
+
+#encoding.SJIS: other,SJIS,iconv,eucJP
+encoding.SJIS: other,SJIS,iconv,UTF-8
+encoding.UTF-8: other,UTF-8,iconv,eucJP
+encoding.eucJP: G0,G1,ansix3.4-1968,jisx0208-1983,jisx0208-1983,jisc6220-1969kana,jisx0208-1969roman,ansix3.4-1968
+#encoding.ISO8859-1: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.1-1987,ansix3.4-1968
+#encoding.ISO8859-2: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.2-1987,ansix3.4-1968
+#encoding.ISO8859-4: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.4-1988,ansix3.4-1968
+#encoding.ISO8859-5: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.5-1988,ansix3.4-1968
+#encoding.ISO8859-7: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.7-1987,ansix3.4-1968
+#encoding.ISO8859-9: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.9-1989,ansix3.4-1968
+#encoding.ISO8859-13: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.13-1998,ansix3.4-1968
+#encoding.ISO8859-15: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.15-1999,ansix3.4-1968
+
+---------------------------------------------------------------------------------------------
+
+# font
+# fontset: iso646-1973irv,pcf,L,/usr/local/lib/X11/fonts/terminus-font/ter-x12n.pcf.gz
+fontset: iso646-1973irv,pcf,L,/usr/local/lib/X11/fonts/misc/6x10.pcf.gz
++fontset: iso646-1973irv,pcf,L,/usr/local/lib/X11/fonts/misc/mplus_f12r.pcf.gz
+# +fontset: iso646-1973irv,pcf,L,/usr/local/lib/X11/fonts/terminus-font/ter-112n.pcf.gz
+# +fontset: iso646-1973irv,pcf,L,/usr/local/lib/X11/fonts/terminus-font/ter-f12n.pcf.gz
+
++fontset: iso8859.1-1987,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-1.pcf.gz
++fontset: iso8859.15-1999,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-15.pcf.gz
+# +fontset: iso8859.1-1987,pcf,R,/usr/local/lib/X11/fonts/terminus-font/ter-112n.pcf.gz
+# +fontset: iso8859.15-1999,pcf,R,/usr/local/lib/X11/fonts/terminus-font/ter-f12n.pcf.gz
+
++fontset: ansix3.4-1968,alias,L,iso646-1973irv
++fontset: jisc6226-1978,pcf,L,/usr/local/lib/X11/fonts/misc/mplus_j12r.pcf.gz
++fontset: jisx0208-1983,alias,L,jisc6226-1978
++fontset: jisc6220-1969roman,pcf,L,/usr/local/lib/X11/fonts/misc/mplus_f12r-jisx0201.pcf.gz
++fontset: jisc6220-1969kana,alias,R,/usr/local/lib/X11/fonts/misc/mplus_f12r-jisx0201.pcf.gz
+
+#encoding.ISO8859-1: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.1-1987,ansix3.4-1968
+#encoding.ISO8859-15: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.15-1999,ansix3.4-1968
+#encoding.EUC-JP: G0,G1,ansix3.4-1968,jisx0208-1983,jisc6220-1969kana,ansix3.4-1968
+encoding.EUC-JP: G0,G1,iso98859.1-1987,jisx0208-1983,jisc6220-1969kana,ansix3.4-1968
+encoding.UTF-8: other,UTF-8,iconv,EUC-JP
+
+-------------------------------------------------------------------------------------------
+
+# font
+fontset: iso646-1973irv,pcf,L,/usr/local/lib/X11/fonts/misc/mplus_f10r.pcf.gz
++fontset: ansix3.4-1968,alias,L,iso646-1973irv
++fontset: jisc6226-1978,pcf,L,/usr/local/lib/X11/fonts/misc/mplus_j10r.pcf.gz
++fontset: jisx0208-1983,alias,L,jisc6226-1978
++fontset: jisc6220-1969roman,pcf,L,/usr/local/lib/X11/fonts/misc/mplus_f12b-jisx0201.pcf.gz
++fontset: jisc6220-1969kana,alias,R,jisc6220-1969roman
++fontset: iso8859.1-1987,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-1.pcf.gz
++fontset: iso8859.2-1987,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-2.pcf.gz
++fontset: iso8859.3-1988,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-3.pcf.gz
++fontset: iso8859.4-1988,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-4.pcf.gz
++fontset: iso8859.5-1988,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-5.pcf.gz
++fontset: iso8859.7-1987,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-7.pcf.gz
++fontset: iso8859.8-1988,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-8.pcf.gz
++fontset: iso8859.9-1989,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-9.pcf.gz
++fontset: iso8859.10-1992,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-10.pcf.gz
++fontset: iso8859.13-1998,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-13.pcf.gz
++fontset: iso8859.14-1998,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-14.pcf.gz
++fontset: iso8859.15-1999,pcf,R,/usr/local/lib/X11/fonts/misc/6x10-ISO8859-15.pcf.gz
+
+encoding.SJIS: other,SJIS,iconv,eucJP
+encoding.UTF-8: other,UTF-8,iconv,eucJP
+encoding.eucJP: G0,G1,ansix3.4-1968,jisx0208-1983,jisc6220-1969kana,ansix3.4-1968
+encoding.US-ASCII: G0,G1,ansix3.4-1968,ansix3.4-1968,iso8859.1-1987,ansix3.4-1968
+encoding.ISO8859-1: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.1-1987,ansix3.4-1968
+encoding.ISO8859-2: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.2-1987,ansix3.4-1968
+encoding.ISO8859-4: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.4-1988,ansix3.4-1968
+encoding.ISO8859-5: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.5-1988,ansix3.4-1968
+encoding.ISO8859-7: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.7-1987,ansix3.4-1968
+encoding.ISO8859-9: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.9-1989,ansix3.4-1968
+encoding.ISO8859-13: G0,G2,ansix3.4-1968,ansix3.4-1968,iso8859.13-1998,ansix3.4-1968
