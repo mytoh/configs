@@ -1,20 +1,23 @@
 
 inetd_enable="yes"
-sshd_enable="yes"
 
 
 clear_tmp_enable="yes"	# Clear /tmp at startup.
 clear_tmp_X="yes" 	# Clear and recreate X11-related directories in /tmp
 
-keymap="us.dvorakx"
+hostname="dixneuf"
+keymap="us.dvorakx.kbd"
+ifconfig_em0=" inet 192.168.1.10 netmask 255.255.255.0"
+defaultrouter="192.168.1.1"
+sshd_enable="YES"
+# Set dumpdev to "AUTO" to enable crash dumps, "NO" to disable
+dumpdev="AUTO"
+
 keyrate="fast"
 keybell="off"
 font8x16="cp865-thin-8x16"
 allscreen_flags="MODE_283"
 
-hostname="dixneuf.local"
-defaultrouter="192.168.1.1"
-ifconfig_em0="inet 192.168.1.10 netmask 255.255.255.0"
 
 dbus_enable="yes"
 hald_enable="yes"
@@ -51,3 +54,4 @@ nfsv4_server_enable="yes"
 privoxy_enable="yes"
 polipo_enable="yes"
 tor_enable="yes"
+
