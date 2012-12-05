@@ -1,2 +1,14 @@
 
-/usr/local/bin/gosh /home/mytoh/local/repo/kirjasto/skripti/kaiutin.scm &
+#/usr/local/bin/gosh /home/mytoh/local/repo/kirjasto/skripti/kaiutin.scm &
+
+
+echo -n 'Setting up Virtual TTYs'
+for ii in /dev/ttyv*
+  do
+    /usr/sbin/vidcontrol < $ii -f 8x8 cp437-8x8
+    /usr/sbin/vidcontrol < $ii VGA_80x60
+    /usr/sbin/vidcontrol green black > $ii 2>&1
+  done
+  /usr/sbin/vidcontrol green black
+
+

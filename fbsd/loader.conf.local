@@ -3,6 +3,7 @@ cpufreq_load="yes"
 sem_load="yes"
 vesa_load="yes"
 usb_load="yes"
+sound_load="yes"
 snd_uaudio_load="yes"
 fuse_load="yes"
 coretemp_load="yes"
@@ -11,6 +12,7 @@ libiconv_load="yes"
 libmchain_load="yes"
 autoboot_delay="5"
 loader_logo="beastie"
+loader_color="yes"
 # vm.pmap.pg_ps_enabled=1
 vfs.usermount=1
 procfs_load="yes"
@@ -21,11 +23,6 @@ lindev_load="yes"		# Linux-specific pseudo devices (see lindev(4))
 speaker_load="yes"
 # vboxdrv_load="yes"
 # pty_load="yes"
-
-# kern.ipc.shmseg="1024"
-# kern.ipc.shmmni="1024"
-# kern.maxproc="10000"
-# kern.maxfiles="25000"
 
 #bitmap_load="yes"
 #splash_bmp_load="yes"

@@ -1,13 +1,14 @@
-
+#
 inetd_enable="yes"
-
+fsck_y_enable="yes"	# Set to YES to do fsck -y if the initial preen fails.
 
 clear_tmp_enable="yes"	# Clear /tmp at startup.
 clear_tmp_X="yes" 	# Clear and recreate X11-related directories in /tmp
 
-hostname="dixneuf"
+hostname="dixneuf.local"
 keymap="us.dvorakx.kbd"
 ifconfig_em0=" inet 192.168.1.10 netmask 255.255.255.0"
+ipv6_activate_all_interfaces="yes"	# If NO, interfaces which have no
 defaultrouter="192.168.1.1"
 sshd_enable="YES"
 # Set dumpdev to "AUTO" to enable crash dumps, "NO" to disable
@@ -15,6 +16,8 @@ dumpdev="AUTO"
 
 keyrate="fast"
 keybell="off"
+font8x8="cp437-8x8"
+font8x14="cp437-8x14"
 font8x16="cp865-thin-8x16"
 allscreen_flags="MODE_283"
 
@@ -27,7 +30,7 @@ mixer_enable="yes"
 powerd_enable="yes"
 moused_enable="no"
 
-devfs_system_ruleset="system"
+# devfs_system_ruleset="system"
 
 
 # ntp.conf
@@ -45,7 +48,7 @@ nfscbd_enable="yes"
 nfs_server_enable="yes"
 nfsv4_server_enable="yes"
 
-#oss_enable="yes"
+# oss_enable="yes"
 #icecast_enable="yes"
 #squid_enable="yes"
 
@@ -54,4 +57,9 @@ nfsv4_server_enable="yes"
 privoxy_enable="yes"
 polipo_enable="yes"
 tor_enable="yes"
+
+supervisord_enable="yes"
+
+# musicpd
+musicpd_enable="yes"
 
