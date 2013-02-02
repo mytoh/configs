@@ -1,25 +1,31 @@
+
 #
 inetd_enable="yes"
-fsck_y_enable="yes"	# Set to YES to do fsck -y if the initial preen fails.
+fsck_y_enable="yes" # Set to YES to do fsck -y if the initial preen fails.
 
-clear_tmp_enable="yes"	# Clear /tmp at startup.
-clear_tmp_X="yes" 	# Clear and recreate X11-related directories in /tmp
+clear_tmp_enable="yes"  # Clear /tmp at startup.
+clear_tmp_X="yes"   # Clear and recreate X11-related directories in /tmp
 
 hostname="dixneuf.local"
 keymap="us.dvorakx.kbd"
 ifconfig_em0=" inet 192.168.1.10 netmask 255.255.255.0"
-ipv6_activate_all_interfaces="yes"	# If NO, interfaces which have no
 defaultrouter="192.168.1.1"
+# ipv6
+# ifconfig_em0_ipv6="inet6"
+# ipv6_activate_all_interfaces="yes"  # If NO, interfaces which have no
+# ip6addrctl_policy="ipv6_prefer" # (ipv4_prefer, ipv6_prefer, or AUTO)
+
 sshd_enable="YES"
+
 # Set dumpdev to "AUTO" to enable crash dumps, "NO" to disable
 dumpdev="AUTO"
 
 keyrate="fast"
 keybell="off"
 font8x8="cp437-8x8"
-font8x14="cp437-8x14"
-font8x16="cp865-thin-8x16"
-allscreen_flags="MODE_283"
+# font8x14="cp437-8x14"
+# font8x16="cp865-thin-8x16"
+allscreen_flags="VGA_80x60"
 
 
 dbus_enable="yes"
@@ -27,8 +33,10 @@ hald_enable="yes"
 usbd_enable="yes"
 linux_enable="yes"
 mixer_enable="yes"
-powerd_enable="yes"
+powerd_enable="yes"   # Run powerd to lower our power usage.
+powerd_flags="-a adaptive"   # Flags to powerd (if enabled).
 moused_enable="no"
+sendmail_enable="no"
 
 # devfs_system_ruleset="system"
 
@@ -63,3 +71,6 @@ supervisord_enable="yes"
 # musicpd
 musicpd_enable="yes"
 
+ # cpu 
+ performance_cx_lowest="C3"
+ economy_cx_lowest="C3"

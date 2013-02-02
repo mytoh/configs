@@ -21,6 +21,7 @@ linsysfs_load="yes"
 linux_load="yes"
 lindev_load="yes"		# Linux-specific pseudo devices (see lindev(4))
 speaker_load="yes"
+# kern.maxproc=7044
 # vboxdrv_load="yes"
 # pty_load="yes"
 
@@ -33,3 +34,8 @@ speaker_load="yes"
 #kern.hz=100
 
 
+# disable p4tcc
+hint.p4tcc.0.disabled=1
+hint.acpi_throttle.0.disabled=1
+hint.p4tcc.1.disabled=1
+hint.acpi_throttle.1.disabled=1
