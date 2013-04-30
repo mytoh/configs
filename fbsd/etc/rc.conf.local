@@ -25,7 +25,7 @@ keybell="off"
 font8x8="cp437-8x8"
 # font8x14="cp437-8x14"
 # font8x16="cp865-thin-8x16"
-allscreen_flags="VGA_80x60"
+allscreens_flags="-m on MODE_280"
 
 
 dbus_enable="yes"
@@ -38,7 +38,6 @@ powerd_flags="-a adaptive"   # Flags to powerd (if enabled).
 moused_enable="no"
 sendmail_enable="no"
 
-# devfs_system_ruleset="system"
 
 
 # ntp.conf
@@ -53,8 +52,8 @@ xntpd_enable="yes"
 nfs_client_enable="yes"
 nfsuserd_enable="yes"
 nfscbd_enable="yes"
-nfs_server_enable="yes"
-nfsv4_server_enable="yes"
+#nfs_server_enable="yes"
+#nfsv4_server_enable="yes"
 
 # oss_enable="yes"
 #icecast_enable="yes"
@@ -62,15 +61,22 @@ nfsv4_server_enable="yes"
 
 
 # tor
-privoxy_enable="yes"
-polipo_enable="yes"
-tor_enable="yes"
+#tor_enable="yes"
+#polipo_enable="yes"
 
 supervisord_enable="yes"
 
 # musicpd
-musicpd_enable="yes"
+#musicpd_enable="yes"
 
- # cpu 
- performance_cx_lowest="C3"
- economy_cx_lowest="C3"
+# cpu
+performance_cx_lowest="C3"
+economy_cx_lowest="C3"
+
+# apache
+apache24_enable="yes"
+
+
+# virtualbox, see loader.conf also
+vboxnet_enable="yes"
+devfs_system_ruleset="system"
