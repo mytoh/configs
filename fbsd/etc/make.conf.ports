@@ -1,0 +1,24 @@
+
+WITH_PKGNG=yes
+
+## use clang for building
+.if !defined(CC) || ${CC} == "cc"
+CC=clang
+.endif
+
+.if !defined(CXX) || ${CXX} == "c++"
+CXX=clang++
+.endif
+
+.if !defined(CPP) || ${CPP} == "cpp"
+CPP=clang -E
+.endif
+
+# dont die on warnings
+NO_WERROR=
+WERROR=
+
+# for jails
+NO_FSCHG=
+OTHER_CFLAGS = -Qunused-arguments
+

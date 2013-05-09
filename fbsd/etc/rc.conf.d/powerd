@@ -1,0 +1,3 @@
+powerd_enable="yes"
+powerd_flags="-a adaptive"
+

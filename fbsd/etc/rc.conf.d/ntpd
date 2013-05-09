@@ -1,0 +1,6 @@
+
+# ntp.conf
+ntpd_enable="yes"
+ntpd_config="/etc/ntp.conf"
+ntpd_sync_on_startup="yes"
+ntpd_flags="-p /var/run/ntpd.pid -f /etc/ntpd.drift"
