@@ -3,19 +3,13 @@
 inetd_enable="yes"
 fsck_y_enable="yes" # Set to YES to do fsck -y if the initial preen fails.
 
-clear_tmp_enable="yes"  # Clear /tmp at startup.
-clear_tmp_X="yes"   # Clear and recreate X11-related directories in /tmp
-
 hostname="dixneuf.local"
-keymap="us.dvorakx.kbd"
 ifconfig_em0=" inet 192.168.1.10 netmask 255.255.255.0"
 defaultrouter="192.168.1.1"
 # ipv6
 # ifconfig_em0_ipv6="inet6"
 # ipv6_activate_all_interfaces="yes"  # If NO, interfaces which have no
 # ip6addrctl_policy="ipv6_prefer" # (ipv4_prefer, ipv6_prefer, or AUTO)
-
-sshd_enable="YES"
 
 # Set dumpdev to "AUTO" to enable crash dumps, "NO" to disable
 dumpdev="AUTO"
@@ -28,25 +22,13 @@ font8x8="cp437-8x8"
 allscreens_flags="-m on MODE_280"
 
 
-dbus_enable="yes"
-hald_enable="yes"
 usbd_enable="yes"
 linux_enable="yes"
 mixer_enable="yes"
-powerd_enable="yes"   # Run powerd to lower our power usage.
-powerd_flags="-a adaptive"   # Flags to powerd (if enabled).
 moused_enable="no"
 sendmail_enable="no"
 
 
-
-# ntp.conf
-ntpd_enable="yes"
-ntpd_config="/etc/ntp.conf"
-ntpd_sync_on_startup="yes"
-ntpd_flags="-p /var/run/ntpd.pid -f /etc/ntpd.drift"
-ntpdate_enable="yes"
-ntpdate_flags="-sbv ntp.nict.jp"
 xntpd_enable="yes"
 
 nfs_client_enable="yes"
@@ -57,7 +39,6 @@ nfscbd_enable="yes"
 
 # oss_enable="yes"
 #icecast_enable="yes"
-#squid_enable="yes"
 
 
 # tor
