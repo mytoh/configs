@@ -14,6 +14,20 @@ CXX=clang++
 CPP=clang -E
 .endif
 
+# emacs
+.if ${_PORTSDIR:M/editors/emacs*}
+CC=cc
+CXX=c++
+CPP=cpp
+.endif
+
+# midori
+.if ${_PORTSDIR:M/www/midori*}
+CC=cc
+CXX=c++
+CPP=cpp
+.endif
+
 # dont die on warnings
 NO_WERROR=
 WERROR=
