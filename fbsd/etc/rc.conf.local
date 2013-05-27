@@ -6,10 +6,18 @@ fsck_y_enable="yes" # Set to YES to do fsck -y if the initial preen fails.
 hostname="dixneuf.local"
 ifconfig_em0=" inet 192.168.1.10 netmask 255.255.255.0"
 defaultrouter="192.168.1.1"
+
 # ipv6
+ipv6_network_interfaces="auto"
+ipv6_activate_all_interfaces="yes"
+ip6addrctl_polily="ipv6_prefer"
+ifconfig_em0_ipv6="inet6 2408:85:86f8:0:52e5:49ff:fe8f:cc3a prefixlen 64"
+#ifconfig_em0_ipv6="inet6 accept_rtadv 2408:85:86f8::1 prefixlen 64"
+rtadvd_enable="yes"
+rtadvd_interfaces="em0"
+rtsold_enable="yes"
+ipv6_defaultrouter="2408:85:86f8:0:21f:67ff:fe34:c291"
 # ifconfig_em0_ipv6="inet6"
-# ipv6_activate_all_interfaces="yes"  # If NO, interfaces which have no
-# ip6addrctl_policy="ipv6_prefer" # (ipv4_prefer, ipv6_prefer, or AUTO)
 
 # Set dumpdev to "AUTO" to enable crash dumps, "NO" to disable
 dumpdev="AUTO"
@@ -27,6 +35,7 @@ linux_enable="yes"
 mixer_enable="yes"
 moused_enable="no"
 sendmail_enable="no"
+dbus_enable="yes"
 
 
 xntpd_enable="yes"
@@ -60,4 +69,4 @@ apache24_enable="yes"
 
 # virtualbox, see loader.conf also
 vboxnet_enable="yes"
-devfs_system_ruleset="system"
+devfs_system_ruleset="10"
