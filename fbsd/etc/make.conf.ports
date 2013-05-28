@@ -1,4 +1,6 @@
 
+WITH_NEW_XORG=yes
+WITH_KMS=yes
 WITH_PKGNG=yes
 
 ## use clang for building
@@ -11,7 +13,7 @@ CXX=clang++
 .endif
 
 .if !defined(CPP) || ${CPP} == "cpp"
-CPP=clang -E
+CPP=clang-cpp
 .endif
 
 # emacs
@@ -28,11 +30,16 @@ CXX=c++
 CPP=cpp
 .endif
 
-# dont die on warnings
-NO_WERROR=
-WERROR=
+# tig
+.if ${_PORTSDIR:M/devel/tig}
+CC=cc
+CXX=c++
+CPP=cpp
+.endif
 
-# for jails
-NO_FSCHG=
-OTHER_CFLAGS = -Qunused-arguments
-
+# pcmanfm
+.if ${_PORTSDIR:M/x11-fm/pcmanfm}
+CC=cc
+CXX=c++
+CPP=cpp
+.endif
