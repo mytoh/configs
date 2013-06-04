@@ -1,7 +1,9 @@
 
 WITH_NEW_XORG=yes
 WITH_KMS=yes
-WITH_PKGNG=yes
+
+# pkgng
+WITH_PKGNG=devel
 
 ## use clang for building
 .if !defined(CC) || ${CC} == "cc"

@@ -13,15 +13,12 @@ libmchain_load="yes"
 autoboot_delay="5"
 loader_logo="beastie"
 loader_color="yes"
-# vm.pmap.pg_ps_enabled=1
-vfs.usermount=1
 procfs_load="yes"
 linprocfs_load="yes"
 linsysfs_load="yes"
 linux_load="yes"
 lindev_load="yes"		# Linux-specific pseudo devices (see lindev(4))
 speaker_load="yes"
-# kern.maxproc=7044
 # vboxdrv_load="yes"
 # pty_load="yes"
 
@@ -34,7 +31,8 @@ splash_bmp_load="yes"
 #snd_hda_load="yes"
 #snd_sb16_load="yes"
 #snd_sb8_load="yes"
-#kern.hz=100
+
+
 
 
 # disable p4tcc
@@ -42,3 +40,9 @@ hint.p4tcc.0.disabled=1
 hint.acpi_throttle.0.disabled=1
 hint.p4tcc.1.disabled=1
 hint.acpi_throttle.1.disabled=1
+
+kern.maxfiles=25000
+#kern.hz=100
+# kern.maxproc=7044
+vfs.usermount=1
+# vm.pmap.pg_ps_enabled=1
