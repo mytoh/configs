@@ -5,6 +5,12 @@ WITH_KMS=yes
 # pkgng
 WITH_PKGNG=devel
 
+# java
+JAVA_VENDOR=openjdk
+JAVA_VERSION=1.7
+BOOTSTRAPJDKDIR=/usr/local/openjdk7
+JAVA_PREFERRED_PORTS=JAVA_PORT_NATIVE_OPENJDK_JDK_1_7
+
 ## use clang for building
 .if !defined(CC) || ${CC} == "cc"
 CC=clang
