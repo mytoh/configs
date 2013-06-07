@@ -11,18 +11,23 @@ JAVA_VERSION=1.7
 BOOTSTRAPJDKDIR=/usr/local/openjdk7
 JAVA_PREFERRED_PORTS=JAVA_PORT_NATIVE_OPENJDK_JDK_1_7
 
-## use clang for building
-.if !defined(CC) || ${CC} == "cc"
-CC=clang
-.endif
 
-.if !defined(CXX) || ${CXX} == "c++"
-CXX=clang++
-.endif
+## options
+# global
+#OPTIONS_SET=
+# local
+jfbterm_SET= ICONV PNG UNIFONT
+mlterm_SET= CAIRO FRIBIDI IBUS M17NLIB SIXEL UIM SCIM
+dzen2_SET= XPM
+dmenu_SET= XFT
+pcmanfm_SET= NLS
+emacs-devel_SET= GTK3
+tmux_SET= LIBEVENT2
+git_SET= SVN
+audacious_SET= GNOME
+audacious-plugins_SET= FLAC MMS MODPLUG SDLOUT SID VORBIS WAVPACK
 
-.if !defined(CPP) || ${CPP} == "cpp"
-CPP=clang-cpp
-.endif
+
 
 # emacs
 .if ${_PORTSDIR:M/editors/emacs*}
