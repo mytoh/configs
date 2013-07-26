@@ -8,15 +8,15 @@ ifconfig_em0=" inet 192.168.1.10 netmask 255.255.255.0"
 defaultrouter="192.168.1.1"
 
 # ipv6
-ipv6_network_interfaces="auto"
-ipv6_activate_all_interfaces="yes"
-ip6addrctl_polily="ipv6_prefer"
+#ipv6_network_interfaces="auto"
+#ipv6_activate_all_interfaces="yes"
+#ip6addrctl_polily="ipv6_prefer"
 #ifconfig_em0_ipv6="inet6 2408:85:86f8:0:52e5:49ff:fe8f:cc3a prefixlen 64"
-ifconfig_em0_ipv6="inet6 2408:85:86f8::1 prefixlen 64"
-rtadvd_enable="yes"
-rtadvd_interfaces="em0"
-rtsold_enable="yes"
-ipv6_defaultrouter="2408:85:86f8:0:21f:67ff:fe34:c291"
+#ifconfig_em0_ipv6="inet6 2408:85:86f8::1 prefixlen 64"
+#rtadvd_enable="yes"
+#rtadvd_interfaces="em0"
+#rtsold_enable="yes"
+#ipv6_defaultrouter="2408:85:86f8:0:21f:67ff:fe34:c291"
 # ifconfig_em0_ipv6="inet6"
 
 # Set dumpdev to "AUTO" to enable crash dumps, "NO" to disable
@@ -43,13 +43,17 @@ sendmail_msp_queue_enable="no"
 
 xntpd_enable="yes"
 
+## nfs
 nfs_client_enable="yes"
 nfsuserd_enable="yes"
 nfscbd_enable="yes"
+nfsd_enable="yes"
 #nfs_server_enable="yes"
 #nfsv4_server_enable="yes"
 rpc_lockd_enable="yes"
 rpc_stad_enable="yes"
+rpcbind_enable="yes"
+mountd_flags="-r -l"
 
 # oss_enable="yes"
 #icecast_enable="yes"
@@ -79,3 +83,12 @@ devfs_system_ruleset="10"
 # pf
 #pf_enable="yes"
 #pflog_enable="yes"
+
+# ipfw
+#firewall_enable="yes"
+#firewall_script="/etc/firewall/rules_default"
+
+
+# zfs
+#zfs_enable="yes"
+
