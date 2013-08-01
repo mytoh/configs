@@ -3,11 +3,12 @@
 inetd_enable="yes"
 fsck_y_enable="yes" # Set to YES to do fsck -y if the initial preen fails.
 
+## network
 hostname="dixneuf.local"
 ifconfig_em0=" inet 192.168.1.10 netmask 255.255.255.0"
 defaultrouter="192.168.1.1"
 
-# ipv6
+## ipv6
 #ipv6_network_interfaces="auto"
 #ipv6_activate_all_interfaces="yes"
 #ip6addrctl_polily="ipv6_prefer"
@@ -19,7 +20,7 @@ defaultrouter="192.168.1.1"
 #ipv6_defaultrouter="2408:85:86f8:0:21f:67ff:fe34:c291"
 # ifconfig_em0_ipv6="inet6"
 
-# Set dumpdev to "AUTO" to enable crash dumps, "NO" to disable
+## Set dumpdev to "AUTO" to enable crash dumps, "NO" to disable
 dumpdev="AUTO"
 
 keyrate="fast"
@@ -59,36 +60,36 @@ mountd_flags="-r -l"
 #icecast_enable="yes"
 
 
-# tor
+## tor
 #tor_enable="yes"
 #polipo_enable="yes"
 
 supervisord_enable="yes"
 
-# musicpd
+## musicpd
 #musicpd_enable="yes"
 
-# cpu
+## cpu
 performance_cx_lowest="C3"
 economy_cx_lowest="C3"
 
-# apache
+## apache
 apache24_enable="yes"
 
 
-# virtualbox, see loader.conf also
-vboxnet_enable="yes"
-devfs_system_ruleset="10"
+## virtualbox, see loader.conf also
+# vboxnet_enable="yes"
+# devfs_system_ruleset="10"
 
-# pf
+## pf
 #pf_enable="yes"
 #pflog_enable="yes"
 
-# ipfw
+## ipfw
 #firewall_enable="yes"
 #firewall_script="/etc/firewall/rules_default"
 
 
-# zfs
+## zfs
 #zfs_enable="yes"
 
