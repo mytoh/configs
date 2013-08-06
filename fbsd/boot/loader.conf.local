@@ -25,26 +25,37 @@ speaker_load="yes"
 # vboxdrv_load="yes"
 # pty_load="yes"
 
-# splash image
+## splash image
 #splash_pcx_load="yes"
-splash_bmp_load="yes"
-bitmap_load="yes"
-bitmap_name="/boot/splash/beastie.bmp"
+#splash_bmp_load="yes"
+#bitmap_load="yes"
+#bitmap_name="/boot/splash/beastie.bmp"
 
 #snd_hda_load="yes"
 #snd_sb16_load="yes"
 #snd_sb8_load="yes"
 #kern.hz=100
 
+## reduce number of sound generated interrupts setting from
+## TuningPowerConsumption FreeBSD wiki
+hw.snd.latency=7
 
-# disable p4tcc
+
+## disable p4tcc
 hint.p4tcc.0.disabled=1
 hint.acpi_throttle.0.disabled=1
 hint.p4tcc.1.disabled=1
 hint.acpi_throttle.1.disabled=1
 
-# ip6
+## ip6
 net.inet6.ip6.forwarding=1
 
-# maximum number of open files
+## maximum number of open files
 kern.maxfiles=250000
+
+## zfs
+#vm.kmem_size="330M"
+#vm.kmem_size_max="330M"
+#vfs.zfs.arc_max="40M"
+#vfs.zfs.vdev.cache.size="5M"
+

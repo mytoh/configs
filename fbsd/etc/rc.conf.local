@@ -42,7 +42,7 @@ sendmail_submit_enable="no"
 sendmail_outbound_enable="no"
 sendmail_msp_queue_enable="no"
 
-xntpd_enable="yes"
+#xntpd_enable="yes"
 
 ## nfs
 nfs_client_enable="yes"
@@ -70,8 +70,8 @@ supervisord_enable="yes"
 #musicpd_enable="yes"
 
 ## cpu
-performance_cx_lowest="C3"
-economy_cx_lowest="C3"
+performance_cx_lowest="C2"
+economy_cx_lowest="C2"
 
 ## apache
 apache24_enable="yes"
