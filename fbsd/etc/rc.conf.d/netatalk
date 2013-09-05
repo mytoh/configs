@@ -3,4 +3,4 @@
 # need these settings also
 #  avahi_daemon_enable="yes"
 # avahi_dnsconfd_enable="yes"
-netatalk_enable="yes"
+#netatalk_enable="yes"
