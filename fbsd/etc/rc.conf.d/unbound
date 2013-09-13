@@ -1,4 +1,4 @@
 
 ## unbound
-devfs_set_rulesets="/usr/local/etc/unbound/dev=devfsrules_unbound"
+devfs_set_rulesets="/usr/local/etc/unbound/dev=unbound_ruleset"
 unbound_enable="yes"
