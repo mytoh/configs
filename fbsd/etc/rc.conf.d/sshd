@@ -1,1 +1,1 @@
-sshd_enable="yes"
+sshd_enable="no"

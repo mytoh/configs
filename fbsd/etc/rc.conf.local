@@ -1,12 +1,15 @@
 
-#
+
 inetd_enable="yes"
 fsck_y_enable="yes" # Set to YES to do fsck -y if the initial preen fails.
 
 ## network
+ifconfig_em0=" inet 192.168.1.10 netmask 255.255.255.0"
 defaultrouter="192.168.1.1"
 
+
 ## ipv6
+#ip6addrctl_policy="ipv6_prefer"
 #ipv6_network_interfaces="auto"
 #ipv6_activate_all_interfaces="yes"
 #ip6addrctl_polily="ipv6_prefer"
@@ -43,16 +46,16 @@ sendmail_msp_queue_enable="no"
 #xntpd_enable="yes"
 
 ## nfs
-nfs_client_enable="yes"
-nfsuserd_enable="yes"
-nfscbd_enable="yes"
-nfsd_enable="yes"
+#nfs_client_enable="yes"
+#nfsuserd_enable="yes"
+#nfscbd_enable="yes"
+#nfsd_enable="yes"
 #nfs_server_enable="yes"
 #nfsv4_server_enable="yes"
-rpc_lockd_enable="yes"
-rpc_stad_enable="yes"
-rpcbind_enable="yes"
-mountd_flags="-r -l"
+#rpc_lockd_enable="yes"
+#rpc_stad_enable="yes"
+#rpcbind_enable="yes"
+#mountd_flags="-r -l"
 
 # oss_enable="yes"
 #icecast_enable="yes"
@@ -68,8 +71,8 @@ supervisord_enable="yes"
 #musicpd_enable="yes"
 
 ## cpu
-performance_cx_lowest="C2"
-economy_cx_lowest="C2"
+performance_cx_lowest="C3"
+economy_cx_lowest="C3"
 
 ## apache
 apache24_enable="yes"
@@ -91,3 +94,5 @@ apache24_enable="yes"
 ## zfs
 #zfs_enable="yes"
 
+## syslog
+syslogd_flags="-s -b 192.168.1.10"
