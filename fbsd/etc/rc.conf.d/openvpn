@@ -1,0 +1,2 @@
+#openvpn_enable="yes"
+#openvpn_if="tap"

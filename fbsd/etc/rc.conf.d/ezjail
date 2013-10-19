@@ -1,0 +1,7 @@
+## for jails
+#ifconfig_em0_alias0="inet 192.168.1.100 netmask 255.255.255.0"
+
+## ezjail
+#ezjail_enable="yes"
+#jail_set_hostname_allow="no"
+#jail_raw_sockets_allow="yes"
