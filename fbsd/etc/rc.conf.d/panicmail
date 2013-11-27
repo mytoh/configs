@@ -1,0 +1,4 @@
+
+dumpdev="AUTO"
+panicmail_enable="yes"
+panicmail_autosubmit="yes"
