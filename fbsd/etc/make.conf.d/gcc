@@ -1,0 +1,6 @@
+## gcc
+CC=gcc47
+CXX=g++47
+CPP=cpp47
+
+

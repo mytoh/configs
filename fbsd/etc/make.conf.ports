@@ -1,15 +1,13 @@
 
 ## clang
-CC=clang
-CXX=clang++
-CPP=clang-cpp
-NO_WERROR=
-WERROR=
+.include "/etc/make.conf.d/clang"
 
+## gcc
+.include "/etc/make.conf.d/gcc"
 
 ## options
 # global
-OPTIONS_SET= NLS HSCOLOUR
+OPTIONS_SET= NLS HSCOLOUR LLVM
 # local
 jfbterm_SET= ICONV PNG UNIFONT
 mlterm_SET= CAIRO FRIBIDI IBUS M17NLIB SIXEL UIM SCIM

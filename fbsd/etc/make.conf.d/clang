@@ -1,0 +1,6 @@
+
+#CC=clang-devel
+#CXX=clang++-devel
+#CPP=clang-cpp-devel
+#NO_WERROR=
+#WERROR=
