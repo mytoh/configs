@@ -1,6 +1,6 @@
 ## gcc
-CC=gcc47
-CXX=g++47
-CPP=cpp47
+CC=gcc410
+CXX=g++410
+CPP=cpp410
 
 
