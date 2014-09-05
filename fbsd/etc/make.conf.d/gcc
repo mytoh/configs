@@ -1,6 +1,4 @@
 ## gcc
-CC=gcc410
-CXX=g++410
-CPP=cpp410
-
-
+CC=gcc5
+CXX=g++5
+CPP=cpp5

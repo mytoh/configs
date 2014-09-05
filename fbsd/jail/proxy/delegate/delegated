@@ -6,12 +6,13 @@ if [ -x /usr/local/sbin/delegated ]
         echo -n ' delegated'
 	/usr/local/sbin/delegated -r -P8080  \
         SERVER=http \
+	PROXY=localhost:8118 \
         CHARCODE=UTF8 \
         CACHE=do \
         CRON="0 2 * * * -expire 2d" \
         EXPIRE=2d \
-	LOGFILE="" \
-	PROTOLOG="" \
+#	LOGFILE="" \
+#	PROTOLOG="" \
  	REACHABLE="*,*:*:192.168.1.22/@:8001" \
 #        CACHEDIR=/var/spool/delegate/cache \
         > /dev/null 2>&1
