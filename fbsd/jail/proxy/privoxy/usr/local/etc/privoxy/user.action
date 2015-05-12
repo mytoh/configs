@@ -1,5 +1,6 @@
 
 { +block{test} }
-.geo\.yahoo\.com
-.static\.affiliate\.rakuten\.co\.jp
-.truoptik\.com
+.geo.yahoo.com
+.static.affiliate.rakuten.co.jp
+.afl.rakuten.co.jp
+.truoptik.com
