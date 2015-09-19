@@ -1,6 +1,5 @@
 
 { +block{test} }
-.geo.yahoo.com
 .static.affiliate.rakuten.co.jp
 .afl.rakuten.co.jp
 .truoptik.com
@@ -14,3 +13,14 @@ platform.twitter.com
 rranking12.ziyu.net
 spdeliverp.i-mobile.co.jp
 www.google-analytics.com
+ssl.google-analytics.com
+cdn.ad.maist.jp
+graph.facebook.com
+
+{ +block{tumblr}}
+tag.researchnow.com
+.geo.yahoo.com
+geo.query.yahoo.com
+.cedexis-test.com
+bam.nr-data.net
+.cedexis.com
