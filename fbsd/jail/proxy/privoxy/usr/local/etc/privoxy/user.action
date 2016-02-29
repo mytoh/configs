@@ -1,4 +1,5 @@
 
+
 { +block{test} }
 .static.affiliate.rakuten.co.jp
 .afl.rakuten.co.jp
@@ -24,3 +25,9 @@ geo.query.yahoo.com
 .cedexis-test.com
 bam.nr-data.net
 .cedexis.com
+
+{ +block{mobile} }
+googleads.g.doubleclick.net
+
+{ -block -filter -fast-redirects -hide-referrer }
+iourpg.com
