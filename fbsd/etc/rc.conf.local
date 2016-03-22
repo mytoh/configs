@@ -3,7 +3,7 @@ inetd_enable="yes"
 fsck_y_enable="yes" # Set to YES to do fsck -y if the initial preen fails.
 
 ## network
-ifconfig_em0=" inet 192.168.1.10 netmask 255.255.255.0"
+ifconfig_em0=" inet 192.168.1.10 netmask 255.255.255.0 mtu 9000"
 defaultrouter="192.168.1.1"
 
 ## lo1
@@ -17,7 +17,7 @@ defaultrouter="192.168.1.1"
 #ifconfig_em0_ipv6="inet6 2408:85:86f8:1::2 prefixlen 64"
 
 ## Set dumpdev to "AUTO" to enable crash dumps, "NO" to disable
-dumpdev="AUTO"
+#dumpdev="AUTO"
 
 keyrate="fast"
 keybell="off"
@@ -45,8 +45,11 @@ sendmail_msp_queue_enable="no"
 #chronyd_enable="yes"
 
 ## ntimed
-ntimed_enable="yes"
-ntimed_flags="ntp1.jst.mfeed.ad.jp ntp2.jst.mfeed.ad.jp ntp3.jst.mfeed.ad.jp"
+#ntimed_enable="yes"
+#ntimed_flags="-t /var/log/ntimed.log ntp1.jst.mfeed.ad.jp ntp2.jst.mfeed.ad.jp ntp3.jst.mfeed.ad.jp"
+
+## openntpd
+openntpd_enable="yes"
 
 ## nfs
 #nfs_client_enable="yes"
@@ -72,7 +75,7 @@ polipo_enable="yes"
 #i2p_enable="yes"
 #i2p_user="i2p"
 
-supervisord_enable="yes"
+#supervisord_enable="yes"
 
 ## musicpd
 #musicpd_enable="yes"
@@ -102,7 +105,8 @@ apache24_enable="yes"
 #zfs_enable="yes"
 
 ## syslog
-syslogd_flags="-s -b 192.168.1.10"
+#syslogd_flags="-s -b 192.168.1.10"
+#syslogd_enable="yes"
 
 ## clear tmp
 clear_tmp_enable="yes"
@@ -130,3 +134,20 @@ openssh_enable="yes"
 
 ## squid
 #squid_enable="yes"
+
+## fuse
+fusefs_enable="yes"
+
+## powerd
+powerd_enable="yes"
+
+## avahi
+avahi_daemon_enable="yes"
+avahi_dnsconfd_enable="yes"
+
+## ftpd
+#ftpd_enable="yes"
+#ftpd_flags="-8 -P 62080"
+
+## sshd
+sshd_enable="yes"
