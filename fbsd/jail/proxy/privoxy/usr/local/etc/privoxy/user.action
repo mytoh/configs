@@ -17,6 +17,7 @@ www.google-analytics.com
 ssl.google-analytics.com
 cdn.ad.maist.jp
 graph.facebook.com
+rt.gsspat.jp
 
 { +block{tumblr}}
 tag.researchnow.com
@@ -31,3 +32,8 @@ googleads.g.doubleclick.net
 
 { -block -filter -fast-redirects -hide-referrer }
 iourpg.com
+
+{+block-as-image{Facebook "like" and similar tracking URLs.}}
+www.facebook.com/(extern|plugins)/(login_status|like(box)?|activity|fan)\.php
+platform.twitter.com/widgets/follow_button?
+plusone.google.com
