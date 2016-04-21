@@ -18,8 +18,11 @@ ssl.google-analytics.com
 cdn.ad.maist.jp
 graph.facebook.com
 rt.gsspat.jp
+twitter.com/intent/
+www.facebook.com/share\.php
+shinobi.jp
 
-{ +block{tumblr}}
+{ +block{tumblr} }
 tag.researchnow.com
 .geo.yahoo.com
 geo.query.yahoo.com
@@ -33,7 +36,7 @@ googleads.g.doubleclick.net
 { -block -filter -fast-redirects -hide-referrer }
 iourpg.com
 
-{+block-as-image{Facebook "like" and similar tracking URLs.}}
+{ +block{Facebook like and similar tracking URLs} +handle-as-image }
 www.facebook.com/(extern|plugins)/(login_status|like(box)?|activity|fan)\.php
 platform.twitter.com/widgets/follow_button?
 plusone.google.com
